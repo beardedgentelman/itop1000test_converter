@@ -1,0 +1,20 @@
+<div class="flex items-center">
+  <input
+    [(ngModel)]="value"
+    (input)="onInputChange($event)"
+    type="number"
+    min="0"
+    aria-describedby="currency-explanation"
+    class="outline-none bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+    placeholder="0"
+  />
+  <select
+    [(ngModel)]="currency"
+    (change)="onSelectChange($event)"
+    class="outline-none bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block py-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+  >
+    <option value="UAH">UAH</option>
+    <option value="USD">USD</option>
+    <option value="EUR">EUR</option>
+  </select>
+</div>
